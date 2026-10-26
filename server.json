@@ -1,0 +1,8 @@
+{
+ "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+ "name": "io.github.CYAN-ECLIPSE-TECHNOLOGIES-LLC/colophon",
+ "title": "Eclipse Colophon MCP",
+ "description": "Catalog of record for books: signed titles, rights, prices & royalties, checked everywhere they",
+ "version": "0.1.0",
+ "websiteUrl": "https://eclipsebazaar.com"
+}
