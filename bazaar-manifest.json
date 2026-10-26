@@ -1,0 +1,32 @@
+{
+  "class": "MCP",
+  "copyright": "© 2026 Cyan Eclipse Technologies LLC · cetech.ai",
+  "descriptor": "Eclipse Colophon — catalog of record for books: signed titles, rights, prices & royalties, checked everywhere they sell.",
+  "name": "Eclipse Colophon",
+  "scope": "local/simulator, synthetic fixtures only",
+  "spec": "eclipse-colophon-spec-20261025.md",
+  "tools_p0": 23,
+  "version": "0.1.0",
+  "bench": {
+    "bench_verdict": "CERTIFIED(local/simulator)",
+    "certified": true,
+    "checks": [
+      "price != book -> receipt with both values + source + ts, PRICE_BELOW_BOOK; feed below floor CRITICAL + consequence chain",
+      "royalty ±1¢ flagged by name; exact-line MATCH with per-line arithmetic trace; estimate-as-ledger-input -> ESTIMATE_AS_TRUTH_REFUSED",
+      "unlicensed territory -> COMMERCE_RIGHTS_UNLICENSED naming cell; EDITION_UNRECORDED + TERRITORY_LEAK both file; discovered editions QUARANTINED",
+      "PIRATE_SOURCE_REFUSED by name in URL/metadata/check forms; tampered signed record -> RECORD_UNSIGNED-class refusal; reprice attempts -> REPRICE_FORBIDDEN / verb absent",
+      "non-owner surface carries zero owner verbs (direct call = UNKNOWN_TOOL); identical re-ingest -> byte-identical ledger, no duplicate lines; REPORT_GAP filed and resolved RESOLVED_REPORT",
+      "N-CHECK novel mechanism vs BookReport/ScribeCount dashboards; Watch D4-gated absent; Connector D3-gated absent; commerce_verify_offer simulator-proven (P2 surface)"
+    ],
+    "not_tested": [
+      "Live retailer / KDP data — KDP has no author API; P0 is synthetic fixtures only.",
+      "Connector fetch — P1/D3-gated, absent at P0.",
+      "Watch — D4-gated, absent at P0.",
+      "commerce_verify_offer against live commerce — P2 surface; simulator-proven at P0 only.",
+      "The owner's real book as dogfood — deferred by the owner; P0 fixtures are synthetic."
+    ],
+    "scorecard_ref": "test-bench/results/eclipse-colophon-mcp-2026-10-25-2.json",
+    "status": "CERTIFIED(local/simulator) — Eclipse Bazaar Test Bench 2026-10-25, run 2 (standing): 19 pass of 19 checks, synthetic fixtures only (5 build-fixture titles + 1 bench-own title; all 8 divergence classes exercised). Independent Verity bench with own fixtures; run 1 card retained append-only."
+  },
+  "status": "v0.1.0 P0 local/simulator — CERTIFIED(local/simulator), Verity bench 2026-10-25 run 2: 19/19 checks pass (run 1 card retained append-only). Synthetic fixtures only; connector fetch P1/D3-gated, Watch D4-gated."
+}
